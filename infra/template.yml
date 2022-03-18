@@ -62,7 +62,7 @@ Resources:
           Value: !Ref Owner
 
   SymmetricKeyAlias:
-    Type: 'AWS::KMS::Alias'
+    Type: "AWS::KMS::Alias"
     Properties:
       AliasName: alias/symmetricKey
       TargetKeyId: !Ref SymmetricKey
@@ -116,9 +116,9 @@ Resources:
       Tags:
         - Key: Owner
           Value: !Ref Owner
-    
+
   AsymmetricKeyAlias:
-    Type: 'AWS::KMS::Alias'
+    Type: "AWS::KMS::Alias"
     Properties:
       AliasName: alias/asymmetricKey
       TargetKeyId: !Ref AsymmetricKey
